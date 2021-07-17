@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors </title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                color: salmon;
+               
+            }
+            header::before{
+                content: "";
+            }
+            img{
+                position: absolute;
+                   top: 0;
+                   left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+
+            }
+            li{
+                list-style: none;
+                padding: 20px 23px;
+            }
+            section{
+                height: 344px;
+                margin: 3px 23px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            h1{
+                font-size: 4rem;
+            }
+            p{
+                text-align: center;
+            }
+            /* section::before{
+                content:"this is a content"
+            } */
+        </style>
+</head>
+<body>
+    <header>
+        <center><img src="bg.jpg" alt="nikebg"></img></center>
+    </header>
+        <section>
+            <h1>Welcome to Nike India</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat aliquam fugit expedita eos, enim aliquid dolore veniam cupiditate? Perspiciatis ullam ipsum explicabo incidunt doloremque aspernatur eligendi ad doloribus reiciendis, error vel qui ea, architecto a fugiat. Quae, accusamus fugiat minima eligendi libero neque debitis voluptatum amet consequatur necessitatibus, dignissimos hic odit voluptatem ut veniam possimus soluta aliquid. Consectetur possimus aut est vitae excepturi quia dolores totam! Fuga, nulla. Veniam ipsum suscipit dolore, voluptate sit a impedit ullam porro vero est provident quis doloremque. Odio sapiente ratione voluptatibus sed expedita quaerat, voluptas vitae itaque reiciendis repellendus neque ex quae labore!</p>
+        </section>
+        
+</body>
+</html>
